@@ -1,0 +1,35 @@
+.indent{
+
+    text-indent: 20px;
+
+}
+
+.coat {
+
+    float: left;
+
+    border: 1px solid darkgray;
+
+    padding: 4px;
+
+    margin: 0 20px 5px 0;
+
+    background: #f0f0f0;
+
+}
+
+.coat figcaption {
+
+    margin: 0 auto 5px;
+
+}
+
+img {
+
+    float: left;
+
+    width: 150px;
+
+    height: 170px;
+
+    border: 1px solid darkgray;}
