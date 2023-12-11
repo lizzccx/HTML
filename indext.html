@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Les6</title>
+    <link href="stylet.css" rel="stylesheet">
+</head>
+<body>
+    <div class="first"> 
+<h1>Larevel 8</h1>
+<section>
+    <div class="content">
+    <h3>Get Started With Machine Learning</h3>
+    <p>Learn the fundamentals of Machine Learning with this free course. Future-proof your career by adding ML skills to your toolkit — or build foundational ML skills to land a job in AI or Data Science.
+    </p>
+    <button class ="button">Get Free Course</button>
+</div>
+    <div class="second">
+    <p>  While creating an application or working with files in your application, you will want to store a file in a folder. Sometimes there will be instances where the folder does not exist.
+  </p>
+<p>You want to create that folder during the process so the file can be stored without making the user resend the request.
+</p>
+<p>You can create folder or directory by using the <span class="redone">File::makeDirectory()</span><span class ="boldtype"> function</span>. </div>
+</p>
+<h2>Syntax</h2>
+<p class="hi">File::makeDirectory($path, $mode, $recursive, $force)</p>
+<p><h2>Parameters</h2></p>
+<p>The File::makeDirectory function takes the following as input parameters:</p>
+<ul>
+     <li> <p> <span class="redone"> $path:</span> This string represents the path of the directory we wish to create.</p></li>   
+    
+     <li> <span class="redone">$mode:</span> This is a four-digit integer that is used to set permissions for the directory.</p></li> 
+    
+     <li> <span class="redone">$mode: </span>This is a boolean variable used to specify if the recursive mode is set.</p> </li>
+
+     <li> <span class="redone">$mode:</span> This is a boolean variable used to specify if the recursive mode is set.</li></p>
+    
+     <li><span class="redone">$force:</span>  This is a boolean variable that, when set, lets you create a file in the profile path even when the directories in the path do not exist.</p></li> 
+</ul>
+
+<p><h2>Return value</h2></p>
+<p>The function returns <span class="redone">true</span> if the requested directory is created. Otherwise, it returns <span class="redone">false</span>.</p>
+<p><h2>Code</h2></p>
+<div class="hel">
+<p>public function createDirecrotory(Request $request) </p>
+   <p>{</p> 
+       <pre>   $path = public_path('upload/');</pre>
+    <pre> </pre>
+       <pre>   if(!File::isDirectory($path)){</pre> 
+        <pre>       File::makeDirectory($path, 0777, true, true);</pre>
+    <pre> </pre>
+   <p> // retry storing the file in newly created path.</p>
+       <pre>        }   </pre>
+     <p>}   </p>
+   </div>
+   <p>The above code has <span class="redone">$path</span>, which is basically an<span class="redone">upload</span>  folder where you want to store the file.</p>
+
+   <p> We check if it exists, and if it doesn’t, we create the <span class="redone">upload</span> folder. </p>
+
+   <pre> </pre>
+   <div class="third">
+   <p> Note: The <span class="redone">File::isDirectory() </span> <span class ="boldtype">function</span> is used to check whether or not the given path exists.</p>
+  </div>
+  
+  <hr>
+  <div>
+  <h6>RELATED TAGS</h6>
+			<div>
+				<button class="button-tags">folder</button>
+				<button class="button-tags">php</button>
+				<button class="button-tags">laravel</button>
+			</div>
+		</div>
+
+		<div>
+			<h6>CONTRIBUTOR</h6>
+			<div class="block">
+				<img src="images/e.png">
+				<p>Chinwelbu Erbi Alubulon</p>
+			</div>
+		</div>
+
+		<hr>
+
+		<p>License: Creative Communicate Common-Attribution-Share Allinon 4.0 CC-5A 4.0</p>
+
+		<div class="link-images">
+			<div class="link-img link-img-1"></div>
+			<div class="link-img link-img-2"></div>
+			<div class="link-img link-img-3"></div>
+			<div class="link-img link-img-4"></div>
+		</div>
+
+	</body>
+</html>
+        
+    </div>
+
+   </div>
+
+
+
+</div>
+</body>
+</html>
+
